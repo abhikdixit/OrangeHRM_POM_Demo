@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Page Object test example]">
+  <parameter name="appURL" value="https://opensource-demo.orangehrmlive.com/index.php/auth/login"/>
+  <parameter name="browserType" value="chrome"/>
+  <test name="test-4(failed)">
+    <classes>
+      <class name="com.orangeHRM.test.OrangeHRM_Navigate">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+          <include name="LogOut"/>
+        </methods>
+      </class> <!-- com.orangeHRM.test.OrangeHRM_Navigate -->
+      <class name="com.orangeHRM.test.OrangeHRM_AddUser">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="LogOut"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.orangeHRM.test.OrangeHRM_AddUser -->
+      <class name="com.orangeHRM.test.OrangeHRM_Login">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.orangeHRM.test.OrangeHRM_Login -->
+      <class name="com.orangeHRM.test.OrangeHRM_AddEmployee">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="LogOut"/>
+          <include name="addEmployeesDataBase"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+          <include name="deleteEmployeesDataBase"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.orangeHRM.test.OrangeHRM_AddEmployee -->
+    </classes>
+  </test> <!-- test-4(failed) -->
+</suite> <!-- Failed suite [Page Object test example] -->

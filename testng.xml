@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Page Object test example">
+	<parameter name="appURL"
+		value="https://opensource-demo.orangehrmlive.com/index.php/auth/login" />
+	<parameter name="browserType" value="chrome" />
+	<test name="test-1">
+		<classes>
+			<class name="com.orangeHRM.test.OrangeHRM_Login" />
+		</classes>
+	</test>
+	<test name="test-2">
+		<classes>
+			<class name="com.orangeHRM.test.OrangeHRM_Navigate" />
+		</classes>
+	</test>
+	<test name="test-3">
+		<classes>
+			<class name="com.orangeHRM.test.OrangeHRM_AddUser" />
+		</classes>
+	</test>
+	<test name="test-4">
+		<classes>
+			<class name="com.orangeHRM.test.OrangeHRM_AddEmployee" />
+		</classes>
+	</test>
+</suite>
